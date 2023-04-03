@@ -5,7 +5,7 @@ class Program
     {
         // Create Tech Tree
         // TODO Create tech tree from file
-        // TODO Finish inventory system
+        
         // TODO Finish research system
         // TODO Finish everything else
     }
