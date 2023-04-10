@@ -10,7 +10,7 @@ public class Inventory
     // check if item type is already in inventory
     // if so, add to amount
     // if not, add to inventory
-    void AddItem(Item item)
+    public void AddItem(Item item)
     {
         if (item.Type == Search(item.Type).Type)
         {
@@ -21,7 +21,7 @@ public class Inventory
         InventoryItems.Add(item);
         }
     }
-    void RemoveItem(Item item)
+    public void RemoveItem(Item item)
     {
     InventoryItems.Remove(item);
     }
@@ -36,6 +36,7 @@ public class Inventory
                 return item;
             }
         }
-        return null;
+        return new Item("null", 0);
+        
     }
 }

@@ -10,16 +10,18 @@
         "projectUniqueName": "E:\\School\\Semester1\\COMP-1030\\Final\\Final.csproj",
         "projectName": "Final",
         "projectPath": "E:\\School\\Semester1\\COMP-1030\\Final\\Final.csproj",
-        "packagesPath": "C:\\Users\\Merik\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\merik\\.nuget\\packages\\",
         "outputPath": "E:\\School\\Semester1\\COMP-1030\\Final\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Merik\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\merik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

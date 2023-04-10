@@ -8,5 +8,9 @@ class Program
         
         // TODO Finish research system
         // TODO Finish everything else
+
+        // Create Game
+        Game game = new Game();
+        game.Run();
     }
 }
