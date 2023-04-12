@@ -16,7 +16,8 @@ namespace Final
         
         public Game()
         {
-
+            Gui gui = new Gui();
+            gui.Intro();
         }
         public void Run()
         {
@@ -35,6 +36,7 @@ namespace Final
             }
         }
         
+
         
     }
 }
