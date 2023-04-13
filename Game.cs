@@ -42,48 +42,52 @@ namespace Final
             
         }
 
-        public void Run()
+        public void Run(bool skipIntro = false)
         {
-            //Game Intro
-            Console.WriteLine("Main power online. Boot sequence ready.");
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadKey();
+            if (skipIntro == false)
+            {
+                //Game Intro
+                Console.WriteLine("Main power online. Boot sequence ready.");
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
 
-            string[] lines = { "\nPower: ONLINE\n", "Construction Interface: ONLINE\n", "AI Core Systems: NOMINAL\n", "Communications Array: OFFLINE\n" };
-            foreach (string line in lines)
-            {
-                foreach (char c in line)
+                string[] lines = { "\nPower: ONLINE\n", "Construction Interface: ONLINE\n", "AI Core Systems: NOMINAL\n", "Communications Array: OFFLINE\n" };
+                foreach (string line in lines)
                 {
-                    Console.Write(c);
-                    Thread.Sleep(50);
+                    foreach (char c in line)
+                    {
+                        Console.Write(c);
+                        Thread.Sleep(50);
+                    }
                 }
-            }
-            Console.WriteLine("");
-            lines = new string[] { "System Check Complete.\n", "Displaying Mission Objective...\n" };
-            foreach (string line in lines)
-            {
-                foreach (char c in line)
+                Console.WriteLine("");
+                lines = new string[] { "System Check Complete.\n", "Displaying Mission Objective...\n" };
+                foreach (string line in lines)
                 {
-                    Console.Write(c);
-                    Thread.Sleep(50);
+                    foreach (char c in line)
+                    {
+                        Console.Write(c);
+                        Thread.Sleep(50);
+                    }
                 }
-            }
-            Thread.Sleep(500);
-            Console.WriteLine("");
-            Console.WriteLine("C:/UN/KS-2/MISSION_OBJ.txt");
-            lines = new string[] {"Launch Date: 04/08/2152\n", "Location: Earth-Moon L1\n", "The UN KS-2 Satelite is an advanced AI tasked with building a Lunar outpost.\n",
-                                "With a network of dones and it's AI core, the system will build and expand itself to build a foothold for humanity on the moon.\n",
-                                "In recent years, Kessler Syndrome has become a major concern for the UN. The KS-2 is humanity's last hope.\n"};
-            foreach (string line in lines)
-            {
-                foreach (char c in line)
+                Thread.Sleep(500);
+                Console.WriteLine("");
+                Console.WriteLine("C:/UN/KS-2/MISSION_OBJ.txt");
+                lines = new string[] {"Launch Date: 04/08/2152\n", "Location: Earth-Moon L1\n", "The UN KS-2 Satelite is an advanced AI tasked with building a Lunar outpost.\n",
+                                    "With a network of dones and it's AI core, the system will build and expand itself to build a foothold for humanity on the moon.\n",
+                                    "In recent years, Kessler Syndrome has become a major concern for the UN. The KS-2 is humanity's last hope.\n"};
+                foreach (string line in lines)
                 {
-                    Console.Write(c);
-                    Thread.Sleep(50);
+                    foreach (char c in line)
+                    {
+                        Console.Write(c);
+                        Thread.Sleep(50);
+                    }
                 }
+                Thread.Sleep(4000);
+                Console.Clear();
             }
-            Thread.Sleep(4000);
-            Console.Clear();
+           
             while (gameEnd == false)
             {
                 DisplayStats();
@@ -118,6 +122,7 @@ namespace Final
         }
 
         //TODO: finish commands, add research, add crafting, add file reading
+        // devote power to things. building more buildings ++ production
         void CraftItem()
         {
             if (power > 0)
@@ -143,9 +148,9 @@ namespace Final
         void DisplayStats()
         {
             Console.Clear();
-            Console.WriteLine("Power: " + power + "/" + maxPower);
-            Console.WriteLine("Cycle: " + cycles);
-            Console.WriteLine("Current Objective:" + currentObjective);
+            Console.Write("Power: " + power + "/" + maxPower);
+            Console.Write("\t\t\tCycle: " + cycles);
+            Console.WriteLine("\t\t\tCurrent Objective:" + currentObjective);
         }
         private void Help()
         {
