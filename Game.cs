@@ -118,7 +118,27 @@ namespace Final
         }
 
         //TODO: finish commands, add research, add crafting, add file reading
-
+        void CraftItem()
+        {
+            if (power > 0)
+            {
+                string itemName = GetInput("What would you like to craft?");
+                Item itemToCraft = inventory.Search(itemName);
+                if (itemToCraft.Type == "null")
+                {
+                    Console.WriteLine("Item not found");
+                }
+                else
+                {
+                     Item[] required = itemToCraft.requiredItems;
+                    foreach (Item item in required)
+                    {
+                        // search inventory for item and check if amount is greater than or equal to required amount
+                        
+                    }
+                }
+            }
+        }
 
         void DisplayStats()
         {
