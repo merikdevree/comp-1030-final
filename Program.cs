@@ -11,6 +11,6 @@ class Program
 
         // Create Game
         Game game = new Game();
-        
+        game.Run();
     }
 }
