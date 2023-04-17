@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\merik\\.nuget\\packages\\": {}
+    "C:\\Users\\Merik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\School\\Semester1\\COMP-1030\\Final\\Final.csproj",
+      "projectUniqueName": "E:\\School\\Semester1\\COMP-1030\\NewFinal\\comp-1030-final\\Final.csproj",
       "projectName": "Final",
-      "projectPath": "E:\\School\\Semester1\\COMP-1030\\Final\\Final.csproj",
-      "packagesPath": "C:\\Users\\merik\\.nuget\\packages\\",
-      "outputPath": "E:\\School\\Semester1\\COMP-1030\\Final\\obj\\",
+      "projectPath": "E:\\School\\Semester1\\COMP-1030\\NewFinal\\comp-1030-final\\Final.csproj",
+      "packagesPath": "C:\\Users\\Merik\\.nuget\\packages\\",
+      "outputPath": "E:\\School\\Semester1\\COMP-1030\\NewFinal\\comp-1030-final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\merik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Merik\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

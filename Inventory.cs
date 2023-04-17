@@ -21,9 +21,16 @@ public class Inventory
         InventoryItems.Add(item);
         }
     }
-    public void RemoveItem(Item item)
+    public void RemoveItem(string type, int amount)
     {
-    InventoryItems.Remove(item);
+        if (Search(type).Amount == 0)
+        {
+            InventoryItems.Remove(Search(type));
+        }
+        else
+        {
+            Search(type).Amount -= amount;
+        }
     }
     // search inventory by item type
     // return item if found
@@ -37,6 +44,18 @@ public class Inventory
             }
         }
         return new Item("null", 0);
-        
     }
+
+    public bool HasItem(string type, int amount = 1)
+    {
+        foreach (Item item in InventoryItems)
+        {
+            if (item.Type == type && item.Amount >= amount)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    
 }
